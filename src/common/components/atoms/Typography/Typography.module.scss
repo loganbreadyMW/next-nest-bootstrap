@@ -1,0 +1,145 @@
+@import '../../../../styles/abstracts/helpers';
+
+.typography__base {
+  font-family: $font-family;
+}
+
+.typography__alignLeft {
+  text-align: left;
+}
+
+.typography__alignCenter {
+  text-align: center;
+}
+
+.typography__alignRight {
+  text-align: right;
+}
+
+.typography__alignJustify {
+  text-align: justify;
+}
+
+.typography__noWrap {
+  white-space: nowrap;
+}
+
+.typography__displayBlock {
+  display: block;
+}
+
+.typography__displayInitial {
+  display: initial;
+}
+
+.typography__displayInline {
+  display: inline;
+}
+
+.typography__gutterBottom {
+  margin: 0 0 0.35em;
+}
+
+.typography__body1 {
+  font-size: px-to-rem(16px);
+  font-weight: $font-weight-regular;
+  letter-spacing: 0.0094em;
+  line-height: 1.5;
+}
+
+.typography__body2 {
+  font-size: px-to-rem(14px);
+  font-weight: $font-weight-regular;
+  letter-spacing: 0.0107em;
+  line-height: 1.43;
+}
+
+.typography__h1 {
+  composes: typography__base;
+  font-size: px-to-rem(96px);
+  font-weight: $font-weight-light;
+  letter-spacing: -0.0156em;
+  line-height: 1.167;
+}
+
+.typography__h2 {
+  composes: typography__base;
+  font-size: px-to-rem(60px);
+  font-weight: $font-weight-light;
+  letter-spacing: -0.0083em;
+  line-height: 1.2;
+}
+
+.typography__h3 {
+  composes: typography__base;
+  font-size: px-to-rem(48px);
+  font-weight: $font-weight-regular;
+  letter-spacing: 0;
+  line-height: 1.167;
+}
+
+.typography__h4 {
+  composes: typography__base;
+  font-size: px-to-rem(34px);
+  font-weight: $font-weight-regular;
+  letter-spacing: 0.0073em;
+  line-height: 1.235;
+}
+
+.typography__h5 {
+  composes: typography__base;
+  font-size: px-to-rem(24px);
+  font-weight: $font-weight-regular;
+  letter-spacing: 0;
+  line-height: 1.334;
+}
+
+.typography__h6 {
+  composes: typography__base;
+  font-size: px-to-rem(20px);
+  font-weight: $font-weight-medium;
+  letter-spacing: 0.0075em;
+  line-height: 1.6;
+}
+
+.typography__subtitle1 {
+  composes: typography__base;
+  font-size: px-to-rem(16px);
+  font-weight: $font-weight-regular;
+  letter-spacing: 0.0094em;
+  line-height: 1.75;
+}
+
+.typography__subtitle2 {
+  composes: typography__base;
+  font-size: px-to-rem(14px);
+  font-weight: $font-weight-medium;
+  letter-spacing: 0.0071em;
+  line-height: 1.57;
+}
+
+.typography__button {
+  composes: typography__base;
+  font-size: px-to-rem(14px);
+  font-weight: $font-weight-medium;
+  letter-spacing: 0.0286em;
+  line-height: 1.75;
+  text-transform: uppercase;
+}
+
+.typography__caption {
+  composes: typography__base;
+  font-size: px-to-rem(12px);
+  font-weight: $font-weight-regular;
+  letter-spacing: 0.0333em;
+  line-height: 1.66;
+}
+
+.typography__overline {
+  composes: typography__base;
+  font-size: px-to-rem(12px);
+  font-weight: $font-weight-regular;
+  letter-spacing: 0.0833em;
+  line-height: 2.66;
+  text-transform: uppercase;
+}

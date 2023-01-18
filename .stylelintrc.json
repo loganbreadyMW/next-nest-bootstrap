@@ -1,0 +1,31 @@
+{
+  "extends": ["stylelint-config-standard-scss", "stylelint-config-prettier-scss"],
+  "plugins": ["stylelint-scss", "stylelint-order"],
+  "rules": {
+    "color-function-notation": "legacy",
+    "color-hex-length": "long",
+    "font-family-name-quotes": "always-unless-keyword",
+    "order/properties-order": [["composes"], { "unspecified": "bottomAlphabetical" }],
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": ["composes"]
+      }
+    ],
+    "scss/comment-no-empty": null,
+    "scss/double-slash-comment-empty-line-before": "never",
+    "selector-class-pattern": [
+      "^[a-z][a-zA-Z0-9]*(?:__[a-zA-Z0-9]+(?:--[a-zA-Z0-9]+)?(?:\\.is-[a-zA-Z0-9]+)?)?$",
+      {
+        "message": "Selector should be written utilizing BEM methodology (https://getbem.com/naming/)"
+      }
+    ],
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global"]
+      }
+    ],
+    "value-keyword-case": null
+  }
+}

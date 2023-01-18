@@ -1,0 +1,22 @@
+{
+  "extends": "./configs/base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@atoms/*": ["src/common/components/atoms/*"],
+      "@hooks/*": ["src/common/hooks/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@lib/*": ["src/lib/*"],
+      "@modules/*": ["src/modules/*"],
+      "@molecules/*": ["src/common/components/molecules/*"],
+      "@organisms/*": ["src/common/components/organisms/*"],
+      "@pages/*": ["src/pages/*"],
+      "@styles/*": ["src/styles/*"],
+      "@templates/*": ["src/common/components/templates/*"],
+      "@types": ["src/common/types"],
+      "@utils/*": ["src/common/utils/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "next.config.js"],
+  "exclude": ["node_modules"]
+}

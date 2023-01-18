@@ -1,0 +1,29 @@
+@use 'sass:map';
+// ----------------------------------------------
+// Functions Documentation: https://sass-lang.com/documentation/at-rules/function
+// ----------------------------------------------
+//
+// ----------------------------------------------
+// Usage: px-to-rem(16px) - returns 1rem
+// @param: $px - pixel value (e.g. 16px)
+// returns: rem value (e.g. 1rem)
+@function px-to-rem($px) {
+  @return ($px / $base-font-size) * 1rem;
+}
+// ----------------------------------------------
+// Usage: get-color($color, $shade) - get color from palette
+// @param: $color - color name (e.g. 'primary')
+// @param: $shade - shade name (e.g. 500 or 'base')
+// returns: color value (e.g. #9c27b0)
+@function get-color($color, $shade) {
+  @if map-has-key($palette, $color) {
+    @if map-has-key(map-get($palette, $color), $shade) {
+      @return map-get(map-get($palette, $color), $shade);
+    } @else {
+      @error 'Color `#{$color}` does not have shade `#{$shade}`.';
+    }
+  } @else {
+    @error 'Color `#{$color}` does not exist.';
+  }
+}
+// ----------------------------------------------

@@ -1,0 +1,73 @@
+{
+  // Editor
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true,
+    "source.organizeImports": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.insertSpaces": true,
+  "editor.minimap.enabled": false,
+  "editor.renderControlCharacters": true,
+  "editor.renderWhitespace": "all",
+  "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": true,
+  // Files
+  "files.trimTrailingWhitespace": true,
+  // Workbench
+  "workbench.editor.enablePreview": false,
+  // TypeScript
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  // ESLint
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  // DotENV
+  "dotenv.enableAutocloaking": false,
+  // Code Spell Checker
+  "cSpell.allowCompoundWords": true,
+  "cSpell.language": "en_US, lorem",
+  "cSpell.words": [
+    "chromaui",
+    "clsx",
+    "commitlintrc",
+    "lintstagedrc",
+    "neue",
+    "nextjs",
+    "npmrc",
+    "parens",
+    "roboto",
+    "segoe",
+    "stylelint",
+    "stylelintrc",
+    "unoptimized",
+    "uuidv",
+    "vercel",
+    "webm",
+    "webp"
+  ],
+  // Stylelint
+  "css.validate": false,
+  "scss.validate": false,
+  "stylelint.snippet": ["css", "scss"],
+  "stylelint.validate": ["css", "scss"],
+  // Language Based Settings
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[properties]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg"
+  }
+}
