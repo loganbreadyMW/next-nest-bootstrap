@@ -14,12 +14,6 @@
     ],
     "scss/comment-no-empty": null,
     "scss/double-slash-comment-empty-line-before": "never",
-    "selector-class-pattern": [
-      "^[a-z][a-zA-Z0-9]*(?:__[a-zA-Z0-9]+(?:--[a-zA-Z0-9]+)?(?:\\.is-[a-zA-Z0-9]+)?)?$",
-      {
-        "message": "Selector should be written utilizing BEM methodology (https://getbem.com/naming/)"
-      }
-    ],
     "selector-pseudo-class-no-unknown": [
       true,
       {
