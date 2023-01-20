@@ -8,11 +8,23 @@ import { useEffect, useState } from 'react';
 import styles from './LeftMainNavigation.module.scss';
 import { NavigationIcons } from './NavigationIcons';
 
-export const LeftMainNavigation = () => {
+interface LeftMainNavigationProps {
+  anchorSide: 'left' | 'right';
+  navigationWidth: number;
+  desktopBackgroundColor: string;
+  mobileBackgroundColor: string;
+}
+
+export const LeftMainNavigation = ({
+  anchorSide,
+  navigationWidth,
+  desktopBackgroundColor,
+  mobileBackgroundColor,
+}: LeftMainNavigationProps) => {
   const [isMobile, setIsMobile] = useState(false);
   const size = useWindowSize();
 
-  const drawerWidth = 80;
+  const drawerWidth = navigationWidth;
   useEffect(() => {
     if (size?.width < 768) {
       setIsMobile(true);
@@ -30,7 +42,7 @@ export const LeftMainNavigation = () => {
           '& .MuiDrawer-paper': {
             width: drawerWidth,
             boxSizing: 'border-box',
-            backgroundColor: isMobile ? '#fff' : '#000',
+            backgroundColor: isMobile ? mobileBackgroundColor : desktopBackgroundColor,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -38,11 +50,11 @@ export const LeftMainNavigation = () => {
           },
         }}
         variant='permanent'
-        anchor='left'
+        anchor={anchorSide}
       >
         <Link href='/'>
           <MwiLogo
-            color={isMobile ? '#000' : '#fff'}
+            color={!isMobile ? mobileBackgroundColor : desktopBackgroundColor}
             width='39'
             height='43'
             className={styles['mwi-logo']}

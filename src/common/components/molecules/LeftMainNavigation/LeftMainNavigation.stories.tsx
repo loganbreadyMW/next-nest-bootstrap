@@ -1,6 +1,5 @@
 import type { ComponentMeta } from '@storybook/react';
 import { LeftMainNavigation } from './LeftMainNavigation';
-import { NavigationIcons } from './NavigationIcons';
 
 export default {
   title: 'Design system/Molecules/LeftMainNavigation',
@@ -9,9 +8,9 @@ export default {
 
 export const Default = () => (
   <LeftMainNavigation
+    anchorSide='left'
     navigationWidth={80}
-    anchorDirection='left'
-    backgroundColor={'#000'}
-    navigationIcons={NavigationIcons}
+    desktopBackgroundColor='#000'
+    mobileBackgroundColor='#fff'
   />
 );
