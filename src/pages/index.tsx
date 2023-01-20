@@ -1,4 +1,5 @@
 import { LeftMainNavigation } from '@molecules/LeftMainNavigation';
+import { LeftMainSlideOutSubNavigation } from '@molecules/LeftMainSlideOutSubNavigation';
 import type { NextPage } from 'next';
 
 const Home: NextPage = () => {
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
           desktopBackgroundColor='#000'
           mobileBackgroundColor='#fff'
         />
+        <LeftMainSlideOutSubNavigation anchorSide='right' navigationWidth={'100vw'} />
         <p>Home</p>
       </div>
     </>
