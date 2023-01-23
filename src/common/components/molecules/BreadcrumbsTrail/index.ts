@@ -1,0 +1,1 @@
+export { BreadcrumbsTrail } from './BreadcrumbsTrail';
