@@ -3,9 +3,9 @@ export const ChevronRight = () => (
     <path
       d='M1 9L5 5L1 1'
       stroke='#D0D5DD'
-      stroke-width='1.33333'
-      stroke-linecap='round'
-      stroke-linejoin='round'
+      strokeWidth='1.33333'
+      strokeLinecap='round'
+      strokeLinejoin='round'
     />
   </svg>
 );
