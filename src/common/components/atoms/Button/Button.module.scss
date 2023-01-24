@@ -1,3 +1,4 @@
+/* stylelint-disable selector-class-pattern */
 @import '../../../../styles/abstracts/helpers';
 
 .button__reset {
@@ -318,4 +319,31 @@
 .button__text--large {
   font-size: px-to-rem(15px);
   padding: 8px 22px;
+}
+
+.button__filter {
+  align-items: flex-start;
+  background: #00f0ff;
+  border: 2px solid #040404;
+
+  /* Shadow/xs */
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 5%);
+
+  /* identical to box height, or 143% */
+
+  /* Base/Black */
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  gap: 8px;
+  height: 44px;
+  justify-content: center;
+  line-height: 20px;
+  padding: 10px 16px;
+  white-space: nowrap;
+  width: 128px;
 }
