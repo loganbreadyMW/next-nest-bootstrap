@@ -1,11 +1,12 @@
-import { Search } from '@atoms/Search/Search';
+import { Filter } from '@atoms/Filter';
 import type { NextPage } from 'next';
 
 const Home: NextPage = () => {
+  const filterOptions = ['All', 'Active', 'Completed'];
   return (
     <>
       <div style={{ height: '100vh', width: '100vw' }}>
-        <Search placeHolder='Search' />
+        <Filter options={filterOptions} />
       </div>
     </>
   );
